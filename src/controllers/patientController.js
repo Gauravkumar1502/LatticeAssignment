@@ -33,7 +33,6 @@ export const registerPatient = (req, res) => {
     const { name, address, email, phone_number, password } = req.body;
     const hashedPassword = bcrypt.hashSync(password, 10);
     const profile_picture = req.file.path;
-    console.log(`Profile picture path: ${profile_picture}`);
     
     const query = 'INSERT INTO patients (name, address, email, phone_number, password, profile_picture, psychiatrist_id) VALUES (?, ?, ?, ?, ?, ?, ?)';
     const values = [name, address, email, phone_number, hashedPassword, profile_picture, req.body.psychiatrist_id];
@@ -59,14 +58,13 @@ export const getPatientById = (req, res) => {
     if (error)
         return res.status(400).json({message: error.details[0].message});
 
-    i
     const query = 'SELECT * FROM patients WHERE id = ?';
     connection.query(query, req.params.id, (err, result) => {
         if (err)
             return res.status(500).json({message: err.message});
         if (result.length === 0)
             return res.status(404).json({message: 'No patient record found with ID: ' + req.params.id});
-        return res.status(200).json(result[0]);
+        return res.status(200).json(result);
     });
 }
 
