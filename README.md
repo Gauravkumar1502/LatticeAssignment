@@ -44,4 +44,7 @@ The Postman collection for testing the RESTful APIs can be found [here](https://
 
 ## Database
 
-The database schema and database dump can be found in the [database](./src/database/) directory, use the dump to create the database and tables.
+The database schema and database dump can be found in the [database](./src/database/) directory.
+
+- There is a seprate dump folder in the database folder which contains the database dump file.
+- You can import this file in your MySQL database to get the database schema and some sample data. [database dump file](./src/database/dump).
