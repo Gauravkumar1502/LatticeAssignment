@@ -2,6 +2,12 @@
 
 This project is a web backend for managing patients registered by psychiatrists in various hospitals. It provides RESTful APIs for patient registration and fetching psychiatrist details for a given hospital.
 
+## Working Project Demo
+
+The video of the working project can be found [here](./assets/Videos/Demo.mp4).
+  
+<video controls src="assets/Videos/Demo.mp4" title="demo"></video>
+
 ## Technologies Used
 
 - **Express.js**: Used as the web framework for handling HTTP requests and responses.
