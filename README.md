@@ -5,8 +5,8 @@ This project is a web backend for managing patients registered by psychiatrists 
 ## Working Project Demo
 
 The video of the working project can be found [here](./assets/Videos/Demo.mp4).
-  
-<video controls src="assets/Videos/Demo.mp4" title="demo"></video>
+
+https://github.com/Gauravkumar1502/LatticeAssignment/assets/67003130/04bb4bb8-46e0-47a0-9144-166fa23b77d7
 
 ## Technologies Used
 
